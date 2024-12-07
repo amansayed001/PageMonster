@@ -1,3 +1,4 @@
+import { Navbar } from "@/components/custom/Navbar";
 import localFont from "next/font/local";
 import "./globals.css";
 
@@ -23,6 +24,9 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        {/* Globally added Navbar */}
+        <Navbar />
+        
         {children}
       </body>
     </html>
